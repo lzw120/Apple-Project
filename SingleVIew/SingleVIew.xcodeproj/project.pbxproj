@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0754809A14E8659A0050CDAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0754809914E8659A0050CDAE /* UIKit.framework */; };
+		0754809C14E8659A0050CDAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0754809B14E8659A0050CDAE /* Foundation.framework */; };
+		0754809E14E8659A0050CDAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0754809D14E8659A0050CDAE /* CoreGraphics.framework */; };
+		075480A414E8659A0050CDAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 075480A214E8659A0050CDAE /* InfoPlist.strings */; };
+		075480A614E8659A0050CDAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 075480A514E8659A0050CDAE /* main.m */; };
+		075480AA14E8659A0050CDAE /* SingleVIewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075480A914E8659A0050CDAE /* SingleVIewAppDelegate.m */; };
+		075480AD14E8659A0050CDAE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075480AB14E8659A0050CDAE /* MainWindow.xib */; };
+		075480B014E8659A0050CDAE /* SingleVIewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075480AF14E8659A0050CDAE /* SingleVIewViewController.m */; };
+		075480B314E8659A0050CDAE /* SingleVIewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075480B114E8659A0050CDAE /* SingleVIewViewController.xib */; };
+		075480BB14E8659A0050CDAE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075480BA14E8659A0050CDAE /* SenTestingKit.framework */; };
+		075480BC14E8659A0050CDAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0754809914E8659A0050CDAE /* UIKit.framework */; };
+		075480BD14E8659A0050CDAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0754809B14E8659A0050CDAE /* Foundation.framework */; };
+		075480BE14E8659A0050CDAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0754809D14E8659A0050CDAE /* CoreGraphics.framework */; };
+		075480C614E8659A0050CDAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 075480C414E8659A0050CDAE /* InfoPlist.strings */; };
+		075480C814E8659A0050CDAE /* SingleVIewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 075480C714E8659A0050CDAE /* SingleVIewTests.h */; };
+		075480CA14E8659A0050CDAE /* SingleVIewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 075480C914E8659A0050CDAE /* SingleVIewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		075480BF14E8659A0050CDAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0754808C14E865990050CDAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0754809414E8659A0050CDAE;
+			remoteInfo = SingleVIew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0754809514E8659A0050CDAE /* SingleVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0754809914E8659A0050CDAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0754809B14E8659A0050CDAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0754809D14E8659A0050CDAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		075480A114E8659A0050CDAE /* SingleVIew-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingleVIew-Info.plist"; sourceTree = "<group>"; };
+		075480A314E8659A0050CDAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		075480A514E8659A0050CDAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		075480A714E8659A0050CDAE /* SingleVIew-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SingleVIew-Prefix.pch"; sourceTree = "<group>"; };
+		075480A814E8659A0050CDAE /* SingleVIewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVIewAppDelegate.h; sourceTree = "<group>"; };
+		075480A914E8659A0050CDAE /* SingleVIewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVIewAppDelegate.m; sourceTree = "<group>"; };
+		075480AC14E8659A0050CDAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		075480AE14E8659A0050CDAE /* SingleVIewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVIewViewController.h; sourceTree = "<group>"; };
+		075480AF14E8659A0050CDAE /* SingleVIewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVIewViewController.m; sourceTree = "<group>"; };
+		075480B214E8659A0050CDAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SingleVIewViewController.xib; sourceTree = "<group>"; };
+		075480B914E8659A0050CDAE /* SingleVIewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleVIewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		075480BA14E8659A0050CDAE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		075480C314E8659A0050CDAE /* SingleVIewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingleVIewTests-Info.plist"; sourceTree = "<group>"; };
+		075480C514E8659A0050CDAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		075480C714E8659A0050CDAE /* SingleVIewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVIewTests.h; sourceTree = "<group>"; };
+		075480C914E8659A0050CDAE /* SingleVIewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVIewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0754809214E8659A0050CDAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0754809A14E8659A0050CDAE /* UIKit.framework in Frameworks */,
+				0754809C14E8659A0050CDAE /* Foundation.framework in Frameworks */,
+				0754809E14E8659A0050CDAE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075480B514E8659A0050CDAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075480BB14E8659A0050CDAE /* SenTestingKit.framework in Frameworks */,
+				075480BC14E8659A0050CDAE /* UIKit.framework in Frameworks */,
+				075480BD14E8659A0050CDAE /* Foundation.framework in Frameworks */,
+				075480BE14E8659A0050CDAE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0754808A14E865990050CDAE = {
+			isa = PBXGroup;
+			children = (
+				0754809F14E8659A0050CDAE /* SingleVIew */,
+				075480C114E8659A0050CDAE /* SingleVIewTests */,
+				0754809814E8659A0050CDAE /* Frameworks */,
+				0754809614E8659A0050CDAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0754809614E8659A0050CDAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0754809514E8659A0050CDAE /* SingleVIew.app */,
+				075480B914E8659A0050CDAE /* SingleVIewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0754809814E8659A0050CDAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0754809914E8659A0050CDAE /* UIKit.framework */,
+				0754809B14E8659A0050CDAE /* Foundation.framework */,
+				0754809D14E8659A0050CDAE /* CoreGraphics.framework */,
+				075480BA14E8659A0050CDAE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0754809F14E8659A0050CDAE /* SingleVIew */ = {
+			isa = PBXGroup;
+			children = (
+				075480A814E8659A0050CDAE /* SingleVIewAppDelegate.h */,
+				075480A914E8659A0050CDAE /* SingleVIewAppDelegate.m */,
+				075480AB14E8659A0050CDAE /* MainWindow.xib */,
+				075480AE14E8659A0050CDAE /* SingleVIewViewController.h */,
+				075480AF14E8659A0050CDAE /* SingleVIewViewController.m */,
+				075480B114E8659A0050CDAE /* SingleVIewViewController.xib */,
+				075480A014E8659A0050CDAE /* Supporting Files */,
+			);
+			path = SingleVIew;
+			sourceTree = "<group>";
+		};
+		075480A014E8659A0050CDAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				075480A114E8659A0050CDAE /* SingleVIew-Info.plist */,
+				075480A214E8659A0050CDAE /* InfoPlist.strings */,
+				075480A514E8659A0050CDAE /* main.m */,
+				075480A714E8659A0050CDAE /* SingleVIew-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		075480C114E8659A0050CDAE /* SingleVIewTests */ = {
+			isa = PBXGroup;
+			children = (
+				075480C714E8659A0050CDAE /* SingleVIewTests.h */,
+				075480C914E8659A0050CDAE /* SingleVIewTests.m */,
+				075480C214E8659A0050CDAE /* Supporting Files */,
+			);
+			path = SingleVIewTests;
+			sourceTree = "<group>";
+		};
+		075480C214E8659A0050CDAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				075480C314E8659A0050CDAE /* SingleVIewTests-Info.plist */,
+				075480C414E8659A0050CDAE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0754809414E8659A0050CDAE /* SingleVIew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075480CD14E8659A0050CDAE /* Build configuration list for PBXNativeTarget "SingleVIew" */;
+			buildPhases = (
+				0754809114E8659A0050CDAE /* Sources */,
+				0754809214E8659A0050CDAE /* Frameworks */,
+				0754809314E8659A0050CDAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingleVIew;
+			productName = SingleVIew;
+			productReference = 0754809514E8659A0050CDAE /* SingleVIew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		075480B814E8659A0050CDAE /* SingleVIewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075480D014E8659A0050CDAE /* Build configuration list for PBXNativeTarget "SingleVIewTests" */;
+			buildPhases = (
+				075480B414E8659A0050CDAE /* Sources */,
+				075480B514E8659A0050CDAE /* Frameworks */,
+				075480B614E8659A0050CDAE /* Resources */,
+				075480B714E8659A0050CDAE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				075480C014E8659A0050CDAE /* PBXTargetDependency */,
+			);
+			name = SingleVIewTests;
+			productName = SingleVIewTests;
+			productReference = 075480B914E8659A0050CDAE /* SingleVIewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0754808C14E865990050CDAE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0754808F14E865990050CDAE /* Build configuration list for PBXProject "SingleVIew" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0754808A14E865990050CDAE;
+			productRefGroup = 0754809614E8659A0050CDAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0754809414E8659A0050CDAE /* SingleVIew */,
+				075480B814E8659A0050CDAE /* SingleVIewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0754809314E8659A0050CDAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075480A414E8659A0050CDAE /* InfoPlist.strings in Resources */,
+				075480AD14E8659A0050CDAE /* MainWindow.xib in Resources */,
+				075480B314E8659A0050CDAE /* SingleVIewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075480B614E8659A0050CDAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075480C614E8659A0050CDAE /* InfoPlist.strings in Resources */,
+				075480C814E8659A0050CDAE /* SingleVIewTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		075480B714E8659A0050CDAE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0754809114E8659A0050CDAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075480A614E8659A0050CDAE /* main.m in Sources */,
+				075480AA14E8659A0050CDAE /* SingleVIewAppDelegate.m in Sources */,
+				075480B014E8659A0050CDAE /* SingleVIewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075480B414E8659A0050CDAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075480CA14E8659A0050CDAE /* SingleVIewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		075480C014E8659A0050CDAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0754809414E8659A0050CDAE /* SingleVIew */;
+			targetProxy = 075480BF14E8659A0050CDAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		075480A214E8659A0050CDAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075480A314E8659A0050CDAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		075480AB14E8659A0050CDAE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075480AC14E8659A0050CDAE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		075480B114E8659A0050CDAE /* SingleVIewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075480B214E8659A0050CDAE /* en */,
+			);
+			name = SingleVIewViewController.xib;
+			sourceTree = "<group>";
+		};
+		075480C414E8659A0050CDAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075480C514E8659A0050CDAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		075480CB14E8659A0050CDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		075480CC14E8659A0050CDAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		075480CE14E8659A0050CDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingleVIew/SingleVIew-Prefix.pch";
+				INFOPLIST_FILE = "SingleVIew/SingleVIew-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		075480CF14E8659A0050CDAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingleVIew/SingleVIew-Prefix.pch";
+				INFOPLIST_FILE = "SingleVIew/SingleVIew-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		075480D114E8659A0050CDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SingleVIew.app/SingleVIew";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingleVIew/SingleVIew-Prefix.pch";
+				INFOPLIST_FILE = "SingleVIewTests/SingleVIewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		075480D214E8659A0050CDAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SingleVIew.app/SingleVIew";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingleVIew/SingleVIew-Prefix.pch";
+				INFOPLIST_FILE = "SingleVIewTests/SingleVIewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0754808F14E865990050CDAE /* Build configuration list for PBXProject "SingleVIew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075480CB14E8659A0050CDAE /* Debug */,
+				075480CC14E8659A0050CDAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		075480CD14E8659A0050CDAE /* Build configuration list for PBXNativeTarget "SingleVIew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075480CE14E8659A0050CDAE /* Debug */,
+				075480CF14E8659A0050CDAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		075480D014E8659A0050CDAE /* Build configuration list for PBXNativeTarget "SingleVIewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075480D114E8659A0050CDAE /* Debug */,
+				075480D214E8659A0050CDAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0754808C14E865990050CDAE /* Project object */;
+}

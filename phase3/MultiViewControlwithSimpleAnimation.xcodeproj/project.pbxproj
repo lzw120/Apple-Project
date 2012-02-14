@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0713E9EF14D0F9A100E25A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713E9EE14D0F9A100E25A0A /* UIKit.framework */; };
+		0713E9F114D0F9A100E25A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713E9F014D0F9A100E25A0A /* Foundation.framework */; };
+		0713E9F314D0F9A100E25A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713E9F214D0F9A100E25A0A /* CoreGraphics.framework */; };
+		0713E9F914D0F9A100E25A0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0713E9F714D0F9A100E25A0A /* InfoPlist.strings */; };
+		0713E9FB14D0F9A100E25A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713E9FA14D0F9A100E25A0A /* main.m */; };
+		0713E9FF14D0F9A100E25A0A /* phase3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713E9FE14D0F9A100E25A0A /* phase3AppDelegate.m */; };
+		0713EA0314D0F9A100E25A0A /* phase3AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713EA0214D0F9A100E25A0A /* phase3AppDelegate_iPhone.m */; };
+		0713EA0614D0F9A100E25A0A /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0713EA0414D0F9A100E25A0A /* MainWindow_iPhone.xib */; };
+		0713EA0A14D0F9A200E25A0A /* phase3AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713EA0914D0F9A200E25A0A /* phase3AppDelegate_iPad.m */; };
+		0713EA0D14D0F9A200E25A0A /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0713EA0B14D0F9A200E25A0A /* MainWindow_iPad.xib */; };
+		0713EA1514D0F9A200E25A0A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713EA1414D0F9A200E25A0A /* SenTestingKit.framework */; };
+		0713EA1614D0F9A200E25A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713E9EE14D0F9A100E25A0A /* UIKit.framework */; };
+		0713EA1714D0F9A200E25A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713E9F014D0F9A100E25A0A /* Foundation.framework */; };
+		0713EA1814D0F9A200E25A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0713E9F214D0F9A100E25A0A /* CoreGraphics.framework */; };
+		0713EA2014D0F9A200E25A0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0713EA1E14D0F9A200E25A0A /* InfoPlist.strings */; };
+		0713EA2214D0F9A200E25A0A /* phase3Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 0713EA2114D0F9A200E25A0A /* phase3Tests.h */; };
+		0713EA2414D0F9A200E25A0A /* phase3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713EA2314D0F9A200E25A0A /* phase3Tests.m */; };
+		0713EA5114D1017200E25A0A /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713EA4F14D1017200E25A0A /* SwitchViewController.m */; };
+		0713EA5214D1017200E25A0A /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0713EA5014D1017200E25A0A /* SwitchViewController.xib */; };
+		0713EA5614D1019100E25A0A /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713EA5414D1019100E25A0A /* BlueViewController.m */; };
+		0713EA5714D1019100E25A0A /* BlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0713EA5514D1019100E25A0A /* BlueViewController.xib */; };
+		0713EA5B14D101A800E25A0A /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0713EA5914D101A800E25A0A /* YellowViewController.m */; };
+		0713EA5C14D101A800E25A0A /* YellowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0713EA5A14D101A800E25A0A /* YellowViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0713EA1914D0F9A200E25A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0713E9E114D0F9A100E25A0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0713E9E914D0F9A100E25A0A;
+			remoteInfo = phase3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0713E9EA14D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiViewControlwithSimpleAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713E9EE14D0F9A100E25A0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0713E9F014D0F9A100E25A0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0713E9F214D0F9A100E25A0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0713E9F614D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation-Info.plist */ = {isa = PBXFileReference; path = "MultiViewControlwithSimpleAnimation-Info.plist"; sourceTree = "<group>"; };
+		0713E9F814D0F9A100E25A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0713E9FA14D0F9A100E25A0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0713E9FC14D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation-Prefix.pch */ = {isa = PBXFileReference; path = "MultiViewControlwithSimpleAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		0713E9FD14D0F9A100E25A0A /* phase3AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phase3AppDelegate.h; sourceTree = "<group>"; };
+		0713E9FE14D0F9A100E25A0A /* phase3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phase3AppDelegate.m; sourceTree = "<group>"; };
+		0713EA0114D0F9A100E25A0A /* phase3AppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = phase3AppDelegate_iPhone.h; path = iPhone/phase3AppDelegate_iPhone.h; sourceTree = "<group>"; };
+		0713EA0214D0F9A100E25A0A /* phase3AppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = phase3AppDelegate_iPhone.m; path = iPhone/phase3AppDelegate_iPhone.m; sourceTree = "<group>"; };
+		0713EA0514D0F9A100E25A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		0713EA0814D0F9A200E25A0A /* phase3AppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = phase3AppDelegate_iPad.h; path = iPad/phase3AppDelegate_iPad.h; sourceTree = "<group>"; };
+		0713EA0914D0F9A200E25A0A /* phase3AppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = phase3AppDelegate_iPad.m; path = iPad/phase3AppDelegate_iPad.m; sourceTree = "<group>"; };
+		0713EA0C14D0F9A200E25A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		0713EA1314D0F9A200E25A0A /* MultiViewControlwithSimpleAnimationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiViewControlwithSimpleAnimationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713EA1414D0F9A200E25A0A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0713EA1D14D0F9A200E25A0A /* MultiViewControlwithSimpleAnimationTests-Info.plist */ = {isa = PBXFileReference; path = "MultiViewControlwithSimpleAnimationTests-Info.plist"; sourceTree = "<group>"; };
+		0713EA1F14D0F9A200E25A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0713EA2114D0F9A200E25A0A /* phase3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phase3Tests.h; sourceTree = "<group>"; };
+		0713EA2314D0F9A200E25A0A /* phase3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phase3Tests.m; sourceTree = "<group>"; };
+		0713EA4E14D1017200E25A0A /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		0713EA4F14D1017200E25A0A /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
+		0713EA5014D1017200E25A0A /* SwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
+		0713EA5314D1019100E25A0A /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		0713EA5414D1019100E25A0A /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		0713EA5514D1019100E25A0A /* BlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueViewController.xib; sourceTree = "<group>"; };
+		0713EA5814D101A800E25A0A /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		0713EA5914D101A800E25A0A /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
+		0713EA5A14D101A800E25A0A /* YellowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0713E9E714D0F9A100E25A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713E9EF14D0F9A100E25A0A /* UIKit.framework in Frameworks */,
+				0713E9F114D0F9A100E25A0A /* Foundation.framework in Frameworks */,
+				0713E9F314D0F9A100E25A0A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0713EA0F14D0F9A200E25A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713EA1514D0F9A200E25A0A /* SenTestingKit.framework in Frameworks */,
+				0713EA1614D0F9A200E25A0A /* UIKit.framework in Frameworks */,
+				0713EA1714D0F9A200E25A0A /* Foundation.framework in Frameworks */,
+				0713EA1814D0F9A200E25A0A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0713E9DF14D0F9A100E25A0A = {
+			isa = PBXGroup;
+			children = (
+				0713E9F414D0F9A100E25A0A /* phase3 */,
+				0713EA1B14D0F9A200E25A0A /* phase3Tests */,
+				0713E9ED14D0F9A100E25A0A /* Frameworks */,
+				0713E9EB14D0F9A100E25A0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0713E9EB14D0F9A100E25A0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0713E9EA14D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation.app */,
+				0713EA1314D0F9A200E25A0A /* MultiViewControlwithSimpleAnimationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0713E9ED14D0F9A100E25A0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0713E9EE14D0F9A100E25A0A /* UIKit.framework */,
+				0713E9F014D0F9A100E25A0A /* Foundation.framework */,
+				0713E9F214D0F9A100E25A0A /* CoreGraphics.framework */,
+				0713EA1414D0F9A200E25A0A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0713E9F414D0F9A100E25A0A /* phase3 */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA4114D0FD9600E25A0A /* SwitchControl */,
+				0713EA4014D0FD8400E25A0A /* BlueView */,
+				0713EA3F14D0FD7000E25A0A /* YelloView */,
+				0713E9FD14D0F9A100E25A0A /* phase3AppDelegate.h */,
+				0713E9FE14D0F9A100E25A0A /* phase3AppDelegate.m */,
+				0713EA0014D0F9A100E25A0A /* iPhone */,
+				0713EA0714D0F9A100E25A0A /* iPad */,
+				0713E9F514D0F9A100E25A0A /* Supporting Files */,
+			);
+			path = phase3;
+			sourceTree = "<group>";
+		};
+		0713E9F514D0F9A100E25A0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0713E9F614D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation-Info.plist */,
+				0713E9F714D0F9A100E25A0A /* InfoPlist.strings */,
+				0713E9FA14D0F9A100E25A0A /* main.m */,
+				0713E9FC14D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0713EA0014D0F9A100E25A0A /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA0114D0F9A100E25A0A /* phase3AppDelegate_iPhone.h */,
+				0713EA0214D0F9A100E25A0A /* phase3AppDelegate_iPhone.m */,
+				0713EA0414D0F9A100E25A0A /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		0713EA0714D0F9A100E25A0A /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA0814D0F9A200E25A0A /* phase3AppDelegate_iPad.h */,
+				0713EA0914D0F9A200E25A0A /* phase3AppDelegate_iPad.m */,
+				0713EA0B14D0F9A200E25A0A /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		0713EA1B14D0F9A200E25A0A /* phase3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA2114D0F9A200E25A0A /* phase3Tests.h */,
+				0713EA2314D0F9A200E25A0A /* phase3Tests.m */,
+				0713EA1C14D0F9A200E25A0A /* Supporting Files */,
+			);
+			path = phase3Tests;
+			sourceTree = "<group>";
+		};
+		0713EA1C14D0F9A200E25A0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA1D14D0F9A200E25A0A /* MultiViewControlwithSimpleAnimationTests-Info.plist */,
+				0713EA1E14D0F9A200E25A0A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0713EA3F14D0FD7000E25A0A /* YelloView */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA5814D101A800E25A0A /* YellowViewController.h */,
+				0713EA5914D101A800E25A0A /* YellowViewController.m */,
+				0713EA5A14D101A800E25A0A /* YellowViewController.xib */,
+			);
+			name = YelloView;
+			sourceTree = "<group>";
+		};
+		0713EA4014D0FD8400E25A0A /* BlueView */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA5314D1019100E25A0A /* BlueViewController.h */,
+				0713EA5414D1019100E25A0A /* BlueViewController.m */,
+				0713EA5514D1019100E25A0A /* BlueViewController.xib */,
+			);
+			name = BlueView;
+			sourceTree = "<group>";
+		};
+		0713EA4114D0FD9600E25A0A /* SwitchControl */ = {
+			isa = PBXGroup;
+			children = (
+				0713EA4E14D1017200E25A0A /* SwitchViewController.h */,
+				0713EA4F14D1017200E25A0A /* SwitchViewController.m */,
+				0713EA5014D1017200E25A0A /* SwitchViewController.xib */,
+			);
+			name = SwitchControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0713E9E914D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0713EA2714D0F9A200E25A0A /* Build configuration list for PBXNativeTarget "MultiViewControlwithSimpleAnimation" */;
+			buildPhases = (
+				0713E9E614D0F9A100E25A0A /* Sources */,
+				0713E9E714D0F9A100E25A0A /* Frameworks */,
+				0713E9E814D0F9A100E25A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiViewControlwithSimpleAnimation;
+			productName = phase3;
+			productReference = 0713E9EA14D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0713EA1214D0F9A200E25A0A /* MultiViewControlwithSimpleAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0713EA2A14D0F9A200E25A0A /* Build configuration list for PBXNativeTarget "MultiViewControlwithSimpleAnimationTests" */;
+			buildPhases = (
+				0713EA0E14D0F9A200E25A0A /* Sources */,
+				0713EA0F14D0F9A200E25A0A /* Frameworks */,
+				0713EA1014D0F9A200E25A0A /* Resources */,
+				0713EA1114D0F9A200E25A0A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0713EA1A14D0F9A200E25A0A /* PBXTargetDependency */,
+			);
+			name = MultiViewControlwithSimpleAnimationTests;
+			productName = phase3Tests;
+			productReference = 0713EA1314D0F9A200E25A0A /* MultiViewControlwithSimpleAnimationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0713E9E114D0F9A100E25A0A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0713E9E414D0F9A100E25A0A /* Build configuration list for PBXProject "MultiViewControlwithSimpleAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0713E9DF14D0F9A100E25A0A;
+			productRefGroup = 0713E9EB14D0F9A100E25A0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0713E9E914D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation */,
+				0713EA1214D0F9A200E25A0A /* MultiViewControlwithSimpleAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0713E9E814D0F9A100E25A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713E9F914D0F9A100E25A0A /* InfoPlist.strings in Resources */,
+				0713EA0614D0F9A100E25A0A /* MainWindow_iPhone.xib in Resources */,
+				0713EA0D14D0F9A200E25A0A /* MainWindow_iPad.xib in Resources */,
+				0713EA5214D1017200E25A0A /* SwitchViewController.xib in Resources */,
+				0713EA5714D1019100E25A0A /* BlueViewController.xib in Resources */,
+				0713EA5C14D101A800E25A0A /* YellowViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0713EA1014D0F9A200E25A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713EA2014D0F9A200E25A0A /* InfoPlist.strings in Resources */,
+				0713EA2214D0F9A200E25A0A /* phase3Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0713EA1114D0F9A200E25A0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0713E9E614D0F9A100E25A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713E9FB14D0F9A100E25A0A /* main.m in Sources */,
+				0713E9FF14D0F9A100E25A0A /* phase3AppDelegate.m in Sources */,
+				0713EA0314D0F9A100E25A0A /* phase3AppDelegate_iPhone.m in Sources */,
+				0713EA0A14D0F9A200E25A0A /* phase3AppDelegate_iPad.m in Sources */,
+				0713EA5114D1017200E25A0A /* SwitchViewController.m in Sources */,
+				0713EA5614D1019100E25A0A /* BlueViewController.m in Sources */,
+				0713EA5B14D101A800E25A0A /* YellowViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0713EA0E14D0F9A200E25A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713EA2414D0F9A200E25A0A /* phase3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0713EA1A14D0F9A200E25A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0713E9E914D0F9A100E25A0A /* MultiViewControlwithSimpleAnimation */;
+			targetProxy = 0713EA1914D0F9A200E25A0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0713E9F714D0F9A100E25A0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0713E9F814D0F9A100E25A0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0713EA0414D0F9A100E25A0A /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0713EA0514D0F9A100E25A0A /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		0713EA0B14D0F9A200E25A0A /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0713EA0C14D0F9A200E25A0A /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		0713EA1E14D0F9A200E25A0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0713EA1F14D0F9A200E25A0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0713EA2514D0F9A200E25A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0713EA2614D0F9A200E25A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0713EA2814D0F9A200E25A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phase3/MultiViewControlwithSimpleAnimation-Prefix.pch";
+				INFOPLIST_FILE = "phase3/MultiViewControlwithSimpleAnimation-Info.plist";
+				PRODUCT_NAME = MultiViewControlwithSimpleAnimation;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0713EA2914D0F9A200E25A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phase3/MultiViewControlwithSimpleAnimation-Prefix.pch";
+				INFOPLIST_FILE = "phase3/MultiViewControlwithSimpleAnimation-Info.plist";
+				PRODUCT_NAME = MultiViewControlwithSimpleAnimation;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0713EA2B14D0F9A200E25A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/phase3.app/phase3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phase3/phase3-Prefix.pch";
+				INFOPLIST_FILE = "phase3Tests/MultiViewControlwithSimpleAnimationTests-Info.plist";
+				PRODUCT_NAME = MultiViewControlwithSimpleAnimationTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0713EA2C14D0F9A200E25A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/phase3.app/phase3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "phase3/phase3-Prefix.pch";
+				INFOPLIST_FILE = "phase3Tests/MultiViewControlwithSimpleAnimationTests-Info.plist";
+				PRODUCT_NAME = MultiViewControlwithSimpleAnimationTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0713E9E414D0F9A100E25A0A /* Build configuration list for PBXProject "MultiViewControlwithSimpleAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0713EA2514D0F9A200E25A0A /* Debug */,
+				0713EA2614D0F9A200E25A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0713EA2714D0F9A200E25A0A /* Build configuration list for PBXNativeTarget "MultiViewControlwithSimpleAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0713EA2814D0F9A200E25A0A /* Debug */,
+				0713EA2914D0F9A200E25A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0713EA2A14D0F9A200E25A0A /* Build configuration list for PBXNativeTarget "MultiViewControlwithSimpleAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0713EA2B14D0F9A200E25A0A /* Debug */,
+				0713EA2C14D0F9A200E25A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0713E9E114D0F9A100E25A0A /* Project object */;
+}
