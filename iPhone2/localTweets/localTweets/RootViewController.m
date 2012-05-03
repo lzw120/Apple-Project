@@ -53,24 +53,25 @@
 }
 
 - (void)updateDatasource {
-    TweetData *data1 = [TweetData tweetDataWithName:@"Bob"
-                                            andText:@"Omg"
+    TweetData *data1 = [TweetData tweetDataWithName:@"husein_alicajic"
+                                            andText:@"How to guide on Instagram filters and directors signature looks via@braxtonpope  http:\/\/t.co\/kcpcXMlT"
                                        andAvatarURL:@"http://s3.amazonaws.com/bkite_store/images/user/avatar/61fd6d89a5211dd9951003048c10834/avatar-small.png"];
+    
     TweetData *data2 = [TweetData tweetDataWithName:@"Dan"
-                                            andText:@"dude lol"
-                                       andAvatarURL:@"http://s3.amazonaws.com/bkite_store/images/user/avatar/61fd6d89a5211dd9951003048c10834/avatar-small.png"];
-    TweetData *data3 = [TweetData tweetDataWithName:@"Scott"
-                                            andText:@"lmao"
-                                       andAvatarURL:@"http://s3.amazonaws.com/bkite_store/images/user/avatar/61fd6d89a5211dd9951003048c10834/avatar-small.png"];
-    TweetData *data4 = [TweetData tweetDataWithName:@"Diana"
-                                            andText:@"abc123"
-                                       andAvatarURL:@"http://s3.amazonaws.com/bkite_store/images/user/avatar/61fd6d89a5211dd9951003048c10834/avatar-small.png"];
-    TweetData *data5 = [TweetData tweetDataWithName:@"Jimmy"
-                                            andText:@" fjadsfkj alkfda dasf dasf "
-                                       andAvatarURL:@"http://s3.amazonaws.com/bkite_store/images/user/avatar/61fd6d89a5211dd9951003048c10834/avatar-small.png"];
-    TweetData *data6 = [TweetData tweetDataWithName:@"Laura"
-                                            andText:@"<FJ DKSJFL NDKSFN LDNSFJNJ DSLFND"
-                                       andAvatarURL:@"http://s3.amazonaws.com/bkite_store/images/user/avatar/61fd6d89a5211dd9951003048c10834/avatar-small.png"];
+                                            andText:@"#WaysToMyHeart... Be funny. Be dorky. Make me laugh. Take me places. Pay for me &amp; I'll pay for you. watch movies with me. Random Adventures"
+                                       andAvatarURL:@"http://a0.twimg.com/profile_images/45764892/Photo_13_normal.jpg"];
+    TweetData *data3 = [TweetData tweetDataWithName:@"DiscoverSMCty"
+                                            andText:@"RT @Live_SV: #PickOfTheDay: Symphonic Band Concert @csmbulldogs &gt;&gt;http:\/\/t.co\/wtvTVl0p &lt;&lt; STAR WARS music and more! #SiliconValley"
+                                       andAvatarURL:@"https://si0.twimg.com/profile_images/452056171/H_normal.jpg"];
+    TweetData *data4 = [TweetData tweetDataWithName:@"justinfitch"
+                                            andText:@"peardoll your phone software wise is probably just jacked up which happens over time. You just gotta start it over basically."
+                                       andAvatarURL:@"http://a0.twimg.com/profile_images/2186407947/Snapshot_20120415_2_normal.JPG"];
+    TweetData *data5 = [TweetData tweetDataWithName:@"Elisabeth"
+                                            andText:@"At @CA_DMV w\/ 16yo for her driving test. Excited! (She's nervous but won't admit it.)"
+                                       andAvatarURL:@"http://a0.twimg.com/profile_images/1853449448/image_normal.jpg"];
+    TweetData *data6 = [TweetData tweetDataWithName:@"MontereySeth"
+                                            andText:@"Reeling in Eco-Friendly Catch - Canada NewsWire (press release) http:\/\/t.co\/Cm2UGajM #seafoodwatch"
+                                       andAvatarURL:@"https://si0.twimg.com/profile_images/1816109942/twitter-dsmc-2_normal.jpg"];
     self.datasource = [NSMutableArray arrayWithObjects:data1, data2, data3, data4, data5, data6, nil];
 }
 
