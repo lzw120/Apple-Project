@@ -16,6 +16,8 @@
 @property(nonatomic, retain) CLLocationManager *locationManager;
 @property(nonatomic, retain) CLLocation *currentLocation;
 @property(nonatomic, retain) NSTimer *locationTimer;
+@property(nonatomic, retain) NSString *lattitude;
+@property(nonatomic, retain) NSString *longtitude;
 
 - (void)updateDatasource;
 

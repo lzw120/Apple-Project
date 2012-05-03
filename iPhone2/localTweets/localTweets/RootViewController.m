@@ -15,6 +15,8 @@
 @synthesize currentLocation;
 @synthesize locationManager;
 @synthesize locationTimer;
+@synthesize lattitude;
+@synthesize longtitude;
 
 - (void)viewDidLoad
 {
@@ -29,6 +31,16 @@
     self.locationTimer = [NSTimer scheduledTimerWithTimeInterval:30.0 target:self selector:@selector(updateLocation) userInfo:nil repeats:YES];
     
     self.navigationItem.title = @"Local Tweets";
+    
+    NSURL* url = [NSURL URLWithString:@"http://aminby.net"];  
+    NSMutableURLRequest* request = [NSMutableURLRequest new];  
+    [request setURL:url];  
+    [request setHTTPMethod:@"GET"];  
+    NSURLRequest* response;  
+    NSData* data = [NSURLConnection sendSynchronousRequest:request  
+                                         returningResponse:&response error:nil];  
+    NSString* strRet = [[NSString alloc] initWithData:data encoding:NSUTF8String];  
+     
     
 }
 
@@ -203,6 +215,8 @@
 - (void)dealloc
 {
     [super dealloc];
+    lattitude = nil;
+    longtitude = nil;
     self.datasource = nil;
 }
 
@@ -210,6 +224,14 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
     NSLog(@"Location found at %f, %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
+    
+    NSString *lat = [[NSString alloc] initWithFormat:@"%g", 
+                     newLocation.coordinate.latitude];
+    lattitude = lat;
+    NSString *lng = [[NSString alloc] initWithFormat:@"%g", 
+                     newLocation.coordinate.longitude];
+    longtitude = lng;
+    
     [locationManager stopUpdatingLocation];
 }
 
