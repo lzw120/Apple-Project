@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface _11ViewController : UIViewController
+@interface _11ViewController : UIViewController <UICollisionBehaviorDelegate>
+
+- (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id)item
+   withBoundaryIdentifier:(id)identifier atPoint:(CGPoint)p ;
+
+- (void)collisionBehavior:(UICollisionBehavior*)behavior beganContactForItem:(id <UIDynamicItem>)item1 withItem:(id <UIDynamicItem>)item2 atPoint:(CGPoint)p;
 
 @end
