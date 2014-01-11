@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FlickrPhotoHeaderView.h"
 #import "FlickrPhotoCell.h"
 @interface ViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -82,11 +83,13 @@
     return cell;
 }
 // 4
-/*- (UICollectionReusableView *)collectionView:
- (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
- {
- return [[UICollectionReusableView alloc] init];
- }*/
+- (UICollectionReusableView *)collectionView: (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    FlickrPhotoHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:
+                                         UICollectionElementKindSectionHeader withReuseIdentifier:@"FlickrPhotoHeaderView" forIndexPath:indexPath];
+    NSString *searchTerm = self.searches[indexPath.section];
+    [headerView setSearchText:searchTerm];
+    return headerView;
+}
 
 
 #pragma mark - UICollectionViewDelegate
