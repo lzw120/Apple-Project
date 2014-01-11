@@ -46,6 +46,7 @@
 		075D1CB2187F97E400F9D995 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 075D1CB0187F97E400F9D995 /* FlickrPhoto.m */; };
 		0797F3D0188043E700B9BAF5 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0797F3CF188043E700B9BAF5 /* FlickrPhotoCell.m */; };
 		07C66011188114DE006C16B1 /* FlickrPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C66010188114DE006C16B1 /* FlickrPhotoHeaderView.m */; };
+		07C66017188118DE006C16B1 /* FlickrPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C66016188118DE006C16B1 /* FlickrPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		0797F3CF188043E700B9BAF5 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickrPhotoCell.m; path = ../FlickrPhotoCell.m; sourceTree = "<group>"; };
 		07C6600F188114DE006C16B1 /* FlickrPhotoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoHeaderView.h; sourceTree = "<group>"; };
 		07C66010188114DE006C16B1 /* FlickrPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoHeaderView.m; sourceTree = "<group>"; };
+		07C66015188118DE006C16B1 /* FlickrPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoViewController.h; sourceTree = "<group>"; };
+		07C66016188118DE006C16B1 /* FlickrPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 				075D1C58187F8C7C00F9D995 /* AppDelegate.h */,
 				07C6600F188114DE006C16B1 /* FlickrPhotoHeaderView.h */,
 				07C66010188114DE006C16B1 /* FlickrPhotoHeaderView.m */,
+				07C66015188118DE006C16B1 /* FlickrPhotoViewController.h */,
+				07C66016188118DE006C16B1 /* FlickrPhotoViewController.m */,
 				075D1C59187F8C7C00F9D995 /* AppDelegate.m */,
 				075D1C5B187F8C7C00F9D995 /* Main_iPhone.storyboard */,
 				075D1C5E187F8C7C00F9D995 /* Main_iPad.storyboard */,
@@ -374,6 +379,7 @@
 			files = (
 				07C66011188114DE006C16B1 /* FlickrPhotoHeaderView.m in Sources */,
 				075D1C63187F8C7C00F9D995 /* ViewController.m in Sources */,
+				07C66017188118DE006C16B1 /* FlickrPhotoViewController.m in Sources */,
 				0797F3D0188043E700B9BAF5 /* FlickrPhotoCell.m in Sources */,
 				075D1C5A187F8C7C00F9D995 /* AppDelegate.m in Sources */,
 				075D1CB1187F97E400F9D995 /* Flickr.m in Sources */,

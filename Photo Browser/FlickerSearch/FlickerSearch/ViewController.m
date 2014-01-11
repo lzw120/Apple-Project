@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "FlickrPhotoHeaderView.h"
 #import "FlickrPhotoCell.h"
-@interface ViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+#import "FlickrPhotoViewController.h"
 
+@interface ViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (nonatomic) BOOL sharing;
 @end
 
 @implementation ViewController
@@ -60,6 +62,14 @@
     return YES; 
 }
 
+#pragma mark - Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowFlickrPhoto"]) {
+        FlickrPhotoViewController *flickrPhotoViewController = segue.destinationViewController;
+        flickrPhotoViewController.flickrPhoto = sender;
+    }
+}
+
 #pragma mark - UICollectionView Datasource
 // 1
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
@@ -96,6 +106,16 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item
+    if (!self.sharing) {
+        NSString *searchTerm = self.searches[indexPath.section];
+        FlickrPhoto *photo = self.searchResults[searchTerm][indexPath.row];
+        [self performSegueWithIdentifier:@"ShowFlickrPhoto"
+                                  sender:photo];
+        [self.collectionView
+         deselectItemAtIndexPath:indexPath animated:YES];
+    } else {
+        // Todo: Multi-Selection
+    }
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     // TODO: Deselect item
