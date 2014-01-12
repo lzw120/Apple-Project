@@ -47,6 +47,7 @@
 		0797F3D0188043E700B9BAF5 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0797F3CF188043E700B9BAF5 /* FlickrPhotoCell.m */; };
 		07C66011188114DE006C16B1 /* FlickrPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C66010188114DE006C16B1 /* FlickrPhotoHeaderView.m */; };
 		07C66017188118DE006C16B1 /* FlickrPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C66016188118DE006C16B1 /* FlickrPhotoViewController.m */; };
+		07C660191882F9C2006C16B1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C660181882F9C2006C16B1 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		07C66010188114DE006C16B1 /* FlickrPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoHeaderView.m; sourceTree = "<group>"; };
 		07C66015188118DE006C16B1 /* FlickrPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoViewController.h; sourceTree = "<group>"; };
 		07C66016188118DE006C16B1 /* FlickrPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoViewController.m; sourceTree = "<group>"; };
+		07C660181882F9C2006C16B1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C660191882F9C2006C16B1 /* MessageUI.framework in Frameworks */,
 				075D1C4C187F8C7C00F9D995 /* CoreGraphics.framework in Frameworks */,
 				075D1C4E187F8C7C00F9D995 /* UIKit.framework in Frameworks */,
 				075D1C4A187F8C7C00F9D995 /* Foundation.framework in Frameworks */,
@@ -160,6 +163,7 @@
 		075D1C48187F8C7C00F9D995 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07C660181882F9C2006C16B1 /* MessageUI.framework */,
 				075D1C49187F8C7C00F9D995 /* Foundation.framework */,
 				075D1C4B187F8C7C00F9D995 /* CoreGraphics.framework */,
 				075D1C4D187F8C7C00F9D995 /* UIKit.framework */,

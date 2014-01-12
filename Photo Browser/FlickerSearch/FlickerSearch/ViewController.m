@@ -10,9 +10,12 @@
 #import "FlickrPhotoHeaderView.h"
 #import "FlickrPhotoCell.h"
 #import "FlickrPhotoViewController.h"
+#import <MessageUI/MessageUI.h>
 
-@interface ViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface ViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MFMailComposeViewControllerDelegate>
 @property (nonatomic) BOOL sharing;
+@property(nonatomic, strong) NSMutableArray *selectedPhotos;
+
 @end
 
 @implementation ViewController
@@ -38,6 +41,30 @@
     self.flickr = [[Flickr alloc] init];
     
     //[self.collectionView registerClass:[FlickrPhotoCell class] forCellWithReuseIdentifier:@"FlickrCell"];
+    self.selectedPhotos = [@[] mutableCopy];
+}
+
+-(void)showMailComposerAndSend {
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        mailer.mailComposeDelegate = self;
+        [mailer setSubject:@"Check out these Flickr Photos"];
+        NSMutableString *emailBody = [NSMutableString string];
+        for(FlickrPhoto *flickrPhoto in self.selectedPhotos)
+        {
+            NSString *url = [Flickr flickrPhotoURLForFlickrPhoto: flickrPhoto size:@"m"];
+            [emailBody appendFormat:@"<div><img src='%@'></div><br>",url];
+        }
+        [mailer setMessageBody:emailBody isHTML:YES];
+        [self presentViewController:mailer animated:YES completion:^{}];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Mail Failure" message:@"Your device doesn't support in-app email" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+}
+
+- (void)mailComposeController: (MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    [controller dismissViewControllerAnimated:YES completion:^{}];
 }
 
 #pragma mark - UITextFieldDelegate methods
@@ -115,9 +142,17 @@
          deselectItemAtIndexPath:indexPath animated:YES];
     } else {
         // Todo: Multi-Selection
+        NSString *searchTerm = self.searches[indexPath.section];
+        FlickrPhoto *photo = self.searchResults[searchTerm][indexPath.row];
+        [self.selectedPhotos addObject:photo];
     }
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.sharing) {
+        NSString *searchTerm = self.searches[indexPath.section];
+        FlickrPhoto *photo = self.searchResults[searchTerm][indexPath.row];
+        [self.selectedPhotos removeObject:photo];
+    }
     // TODO: Deselect item
 }
 
@@ -142,7 +177,30 @@
 
 
 -(IBAction)shareButtonTapped:(id)sender {
-    // TODO
+    UIBarButtonItem *shareButton = (UIBarButtonItem *)sender;
+    // 1
+    if (!self.sharing) {
+        self.sharing = YES;
+        [shareButton setStyle:UIBarButtonItemStyleDone];
+        [shareButton setTitle:@"Done"];
+        [self.collectionView setAllowsMultipleSelection:YES];
+    } else {
+        // 2
+        self.sharing = NO;
+        [shareButton setStyle:UIBarButtonItemStyleBordered];
+        [shareButton setTitle:@"Share"];
+        [self.collectionView setAllowsMultipleSelection:NO];
+        // 3
+        if ([self.selectedPhotos count] > 0) {
+            NSLog(@"selected: %lu\n", (unsigned long)[self.selectedPhotos count]);
+            [self showMailComposerAndSend];
+        }
+        // 4
+        for(NSIndexPath *indexPath in self.collectionView.indexPathsForSelectedItems) {
+            [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
+        }
+        [self.selectedPhotos removeAllObjects];
+    }
 }
 
 - (void)didReceiveMemoryWarning
