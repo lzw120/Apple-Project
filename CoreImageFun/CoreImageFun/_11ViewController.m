@@ -8,7 +8,11 @@
 
 #import "_11ViewController.h"
 
-@interface _11ViewController ()
+@interface _11ViewController () {
+    CIContext *context;
+    CIFilter *filter;
+    CIImage *beginImage;
+}
 
 @end
 
@@ -22,15 +26,12 @@
     [[NSBundle mainBundle] pathForResource:@"image" ofType:@"png"];
     NSURL *fileNameAndPath = [NSURL fileURLWithPath:filePath];
     
-    CIImage *beginImage =
-    [CIImage imageWithContentsOfURL:fileNameAndPath];
+    beginImage = [CIImage imageWithContentsOfURL:fileNameAndPath];
+    context = [CIContext contextWithOptions:nil];
     
-    // 1
-    CIContext *context = [CIContext contextWithOptions:nil];
-    
-    CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone"
-                                  keysAndValues: kCIInputImageKey, beginImage,
-                        @"inputIntensity", @0.8, nil];
+    filter = [CIFilter filterWithName:@"CISepiaTone"
+                        keysAndValues:kCIInputImageKey, beginImage, @"inputIntensity",
+              @0.8, nil];
     CIImage *outputImage = [filter outputImage];
     
     // 2
@@ -44,6 +45,29 @@
     // 4
     CGImageRelease(cgimg);
 }
+
+- (IBAction)loadPhoto:(id)sender {
+    UIImagePickerController *pickerC = [[UIImagePickerController alloc] init];
+    pickerC.delegate = self;
+    [self presentViewController:pickerC animated:YES completion:nil];
+}
+
+- (IBAction)amountSliderValueChanged:(UISlider *)slider {
+    float slideValue = slider.value;
+    
+    [filter setValue:@(slideValue)
+              forKey:@"inputIntensity"];
+    CIImage *outputImage = [filter outputImage];
+    
+    CGImageRef cgimg = [context createCGImage:outputImage
+                                     fromRect:[outputImage extent]];
+    
+    UIImage *newImage = [UIImage imageWithCGImage:cgimg];
+    self.imageView.image = newImage;
+    
+    CGImageRelease(cgimg);
+}
+
 
 - (void)didReceiveMemoryWarning
 {
