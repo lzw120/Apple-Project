@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070BDB981886E70700CBB46C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BDB971886E70700CBB46C /* AssetsLibrary.framework */; };
 		07487A9E188437D300AE63B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07487A9D188437D300AE63B3 /* Foundation.framework */; };
 		07487AA0188437D300AE63B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07487A9F188437D300AE63B3 /* CoreGraphics.framework */; };
 		07487AA2188437D300AE63B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07487AA1188437D300AE63B3 /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070BDB971886E70700CBB46C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		07487A9A188437D300AE63B3 /* CoreImageFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreImageFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07487A9D188437D300AE63B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07487A9F188437D300AE63B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070BDB981886E70700CBB46C /* AssetsLibrary.framework in Frameworks */,
 				07487AD31884384800AE63B3 /* CoreImage.framework in Frameworks */,
 				07487AA0188437D300AE63B3 /* CoreGraphics.framework in Frameworks */,
 				07487AA2188437D300AE63B3 /* UIKit.framework in Frameworks */,
@@ -107,6 +110,7 @@
 		07487A9C188437D300AE63B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				070BDB971886E70700CBB46C /* AssetsLibrary.framework */,
 				07487AD21884384800AE63B3 /* CoreImage.framework */,
 				07487A9D188437D300AE63B3 /* Foundation.framework */,
 				07487A9F188437D300AE63B3 /* CoreGraphics.framework */,
@@ -469,6 +473,7 @@
 				07487ACE188437D300AE63B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07487ACF188437D300AE63B3 /* Build configuration list for PBXNativeTarget "CoreImageFunTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +482,7 @@
 				07487AD1188437D300AE63B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

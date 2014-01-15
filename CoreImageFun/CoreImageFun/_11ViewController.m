@@ -7,10 +7,12 @@
 //
 
 #import "_11ViewController.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
-@interface _11ViewController () {
+@interface _11ViewController ()<UIImagePickerControllerDelegate, UINavigationBarDelegate> {
     CIContext *context;
     CIFilter *filter;
+    __weak IBOutlet UISlider *amountSlider;
     CIImage *beginImage;
 }
 
@@ -46,6 +48,20 @@
     CGImageRelease(cgimg);
 }
 
+- (void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    UIImage *gotImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    beginImage = [CIImage imageWithCGImage:gotImage.CGImage];
+    [filter setValue:beginImage forKey:kCIInputImageKey];
+    [self amountSliderValueChanged:amountSlider];
+}
+
+- (void)imagePickerControllerDidCancel:
+(UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (IBAction)loadPhoto:(id)sender {
     UIImagePickerController *pickerC = [[UIImagePickerController alloc] init];
     pickerC.delegate = self;
@@ -57,15 +73,16 @@
     
     [filter setValue:@(slideValue)
               forKey:@"inputIntensity"];
-    CIImage *outputImage = [filter outputImage];
-    
-    CGImageRef cgimg = [context createCGImage:outputImage
-                                     fromRect:[outputImage extent]];
-    
-    UIImage *newImage = [UIImage imageWithCGImage:cgimg];
-    self.imageView.image = newImage;
-    
-    CGImageRelease(cgimg);
+
+        CIImage *outputImage = [filter outputImage];
+        
+        CGImageRef cgimg = [context createCGImage:outputImage fromRect:[outputImage extent]];
+        
+        UIImage *newImage = [UIImage imageWithCGImage:cgimg];
+        
+        self.imageView.image = newImage;
+        
+        CGImageRelease(cgimg);
 }
 
 
