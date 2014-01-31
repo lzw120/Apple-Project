@@ -71,18 +71,24 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
 - (IBAction)amountSliderValueChanged:(UISlider *)slider {
     float slideValue = slider.value;
     
-    [filter setValue:@(slideValue)
-              forKey:@"inputIntensity"];
-
+    dispatch_queue_t queue = dispatch_queue_create("com.dispatch.serial", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{
+        
         CIImage *outputImage = [filter outputImage];
         
         CGImageRef cgimg = [context createCGImage:outputImage fromRect:[outputImage extent]];
         
         UIImage *newImage = [UIImage imageWithCGImage:cgimg];
         
-        self.imageView.image = newImage;
+
+        [filter setValue:@(slideValue)
+                  forKey:@"inputIntensity"];
+        //self.imageView.image = newImage;
+        [self.imageView performSelectorOnMainThread:@selector(setImage:) withObject:newImage waitUntilDone:YES];
         
         CGImageRelease(cgimg);
+        
+    });
 }
 
 
