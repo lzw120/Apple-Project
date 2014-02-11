@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface _11ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@interface _11ViewController : UIViewController <UIImagePickerControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
 
 @end
